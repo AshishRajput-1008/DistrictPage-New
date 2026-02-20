@@ -10,7 +10,7 @@ export default async function MainSectionServerDistrict() {
         getDistrictCategoryNews(districts[0], 3),
         getDistrictCategoryNews(districts[1], 4),
         getDistrictCategoryNews(districts[2], 6),
-        getDistrictCategoryNews(districts[3], 4),
+        getDistrictCategoryNews(districts[3], 6),
     ]);
 
     return (

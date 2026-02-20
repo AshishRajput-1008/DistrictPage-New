@@ -56,7 +56,7 @@ export default function MainSectionClientDistrict({ business, taaza, sports, ent
             <div className="flex items-center gap-2 md:gap-3 mb-6 md:mb-8">
                 <div className="h-1 w-8 md:w-12" style={{ backgroundColor: "#0C0E0B" }} />
                 <h2 className="text-xl md:text-2xl lg:text-3xl font-black text-gray-900">
-                    {districtName ? `${districtName} — सभी श्रेणियां` : "सभी श्रेणियां"}
+                    {/* {districtName ? `${districtName} — सभी श्रेणियां` : "सभी श्रेणियां"} */}सभी श्रेणियां
                 </h2>
                 <div
                     className="h-1 flex-1"
@@ -244,7 +244,7 @@ export default function MainSectionClientDistrict({ business, taaza, sports, ent
                             {business[0]?.DistrictNameInHindi ?? "कारोबार"}
                         </h3>
                         <div className="space-y-3 md:space-y-4">
-                            {business.slice(0, 3).map((news, index) => (
+                            {business.slice(0, 4).map((news, index) => (
                                 <div
                                     key={news.ID}
                                     className={`py-2 md:py-3 ${index < 2 ? "border-b border-gray-300" : ""}`}
@@ -311,7 +311,7 @@ export default function MainSectionClientDistrict({ business, taaza, sports, ent
 
                         {/* Entertainment list */}
                         <div className="space-y-2 md:space-y-3">
-                            {entertainment.slice(1, 3).map((news) => (
+                            {entertainment.slice(0, 3).map((news) => (
                                 <div
                                     key={news.ID}
                                     className="bg-white p-2 md:p-3 md:pr-0 shadow-sm hover:shadow-md transition-shadow border-l-4"

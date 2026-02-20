@@ -18,7 +18,7 @@ export default function VideoNewsClient({
                 <div className="flex items-center justify-between mb-6 gap-3">
                     <div className="flex items-center gap-2 sm:gap-3 flex-1 min-w-0">
                         <div className="w-1 h-6 sm:h-8 bg-[#b30000] flex-shrink-0"></div>
-                        <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 truncate">
+                        <h2 className="text-2xl sm:text-xl lg:text-2xl font-bold text-gray-900 truncate">
                             वीडियो
                         </h2>
                     </div>

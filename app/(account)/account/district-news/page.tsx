@@ -43,7 +43,7 @@ export default function DistrictNewsPage() {
 
   return (
     <>
-      <div className="min-h-screen">
+      <div className="min-h-screen overflow-x-hidden">
         <RedHeaderServer />
         <div className="py-[2vw] px-[3vw] sm:px-[4vw] lg:px-[5.9vw] max-w-[1920px] mx-auto">
           <div className="w-full">

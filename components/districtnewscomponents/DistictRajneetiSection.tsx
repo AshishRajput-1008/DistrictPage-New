@@ -102,7 +102,7 @@ export default function RajneetiClient() {
       <div className="max-w-[1350px] py-4 pb-2">
         <div className="flex items-center gap-3 mb-6">
                 <div className="w-1 h-8 bg-[#b30000]"></div>
-                <h2 className="text-xl sm:text-2xl font-bold text-gray-900">
+                <h2 className="text-2xl sm:text-2xl font-bold text-gray-900">
                   और खबरें – राजनीति
                 </h2>
               </div>
@@ -168,7 +168,7 @@ export default function RajneetiClient() {
                       </span>
                     </div>
 
-                    <div className="mt-auto pt-2 md:pt-4 border-t border-dotted border-gray-600 mt-2"></div>
+                    <div className="pt-2 md:pt-4 border-t border-dotted border-gray-600 mt-2"></div>
                   </div>
                 </Link>
               </article>

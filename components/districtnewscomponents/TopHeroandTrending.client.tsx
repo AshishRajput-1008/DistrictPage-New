@@ -33,7 +33,7 @@ export default function TopHeroandTrendingClient({
   return (
     <>
       {/* MAIN HERO NEWS SECTION and trending */}
-      <div className="grid md:grid-cols-12 gap-6 mb-8">
+      <div className="grid md:grid-cols-12 gap-6 mb-8 w-full min-w-0">
         {/* Left - Main Feature */}
         <div className="md:col-span-7">
           <Card className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow border-0">
@@ -44,24 +44,14 @@ export default function TopHeroandTrendingClient({
                 className="w-full h-[280px] object-cover"
               />
             </div>
-            <CardContent className="p-6">
+            <CardContent className="p-6 pb-4">
               {/* Heading */}
-              <h2 className="text-3xl font-bold mb-2 leading-tight hover:text-[#D6303A] cursor-pointer transition-colors">
-            <span>{heroNews.NewsHeadingTwo}</span>:
-   {heroNews.NewsHeading} 
+              <h2 className="text-3xl font-bold mb-3 leading-tight hover:text-[#D6303A] cursor-pointer transition-colors">
+                <span>{heroNews.NewsHeadingTwo}</span>:{heroNews.NewsHeading}
               </h2>
 
-              {/* NewsDetails - max 2 lines, HTML stripped to plain text */}
               {plainDetails && (
-                <p
-                  className="text-gray-700 mb-3 text-sm leading-relaxed"
-                  style={{
-                    display: "-webkit-box",
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: "vertical",
-                    overflow: "hidden",
-                  }}
-                >
+                <p className="text-gray-600 mb-3 leading-relaxed line-clamp-4 md:line-clamp-2">
                   {plainDetails}
                 </p>
               )}
@@ -122,7 +112,15 @@ export default function TopHeroandTrendingClient({
                           {idx + 1}
                         </div>
 
-                        <p className="text-sm font-semibold leading-tight group-hover:text-[#D6303A] transition-colors whitespace-nowrap overflow-hidden text-ellipsis">
+                        <p
+                          style={{
+                            display: "-webkit-box",
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: "vertical",
+                            overflow: "hidden",
+                          }}
+                          className="text-sm font-semibold leading-tight group-hover:text-[#D6303A] transition-colors overflow-hidden"
+                        >
                           {news?.NewsHeading ?? ""}
                         </p>
                       </div>

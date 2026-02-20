@@ -73,7 +73,7 @@ export default function SpecialNewsClient({ mixedNews }: { mixedNews: any[] }) {
                                     </span>
                                 </div>
 
-                                <h5 className="text-[13px] md:text-[15px] font-bold text-gray-900 line-clamp-3 mb-2 hover:text-red-600 cursor-pointer">
+                                <h5 className="text-[16px] md:text-[15px] font-bold text-gray-900 line-clamp-3 mb-2 hover:text-red-600 cursor-pointer">
                                     {news.NewsTag && (
                                         <span className="text-blue-900">{news.NewsTag}:</span>
                                     )}{" "}
@@ -172,7 +172,7 @@ export default function SpecialNewsClient({ mixedNews }: { mixedNews: any[] }) {
             <div className="lg:col-span-4">
                 <div className="flex items-center gap-3 mb-6">
                     <div className="w-1 h-8 bg-[#b30000]"></div>
-                    <h2 className="text-2xl font-bold text-gray-900">
+                    <h2 className="text-3xl  md:text-2xl font-bold text-gray-900 mt-3 md:mt-0">
                         ट्रेंडिंग खबरें
                     </h2>
                 </div>

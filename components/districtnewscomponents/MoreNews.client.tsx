@@ -26,7 +26,7 @@ export default function MoreNewsClient({
             <div className="mb-8">
                 <div className="flex items-center gap-3 mb-6">
                     <div className="w-1 h-8 bg-[#b30000]"></div>
-                    <h2 className="text-xl sm:text-2xl font-bold text-gray-900">
+                    <h2 className="text-2xl sm:text-2xl font-bold text-gray-900">
                         और खबरें – {districtName}
                     </h2>
                 </div>
