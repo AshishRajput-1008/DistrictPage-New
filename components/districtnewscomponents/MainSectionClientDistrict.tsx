@@ -297,9 +297,10 @@ export default function MainSectionClientDistrict({ business, taaza, sports, ent
                                         <Eye className="w-4 h-4" />
                                         {entertainment[0].ViewCount}
                                     </span>
-                                </div>
-                                <h4 className="text-[20px] md:text-[17px] font-medium leading-wide text-gray-900 tracking-wider mb-2 hover:text-[#565ee1] cursor-pointer">
-                                    <span className="text-[#664bff]">{entertainment[0].NewsTag}:</span>{" "}
+                                </div>   
+                                                               <h4 className="text-[20px] md:text-[17px] font-medium text-gray-900 leading-wide mb-2 hover:text-[#00aee3] cursor-pointer">
+
+                                    <span className="text-[#00aee3]">{entertainment[0].NewsTag}:</span>{" "}
                                     {entertainment[0].NewsHeading}
                                 </h4>
                                 <div className="flex flex-row sm:flex-row justify-between gap-1 sm:gap-0 text-[11px] md:text-[13px] text-gray-500 opacity-80">
@@ -320,7 +321,7 @@ export default function MainSectionClientDistrict({ business, taaza, sports, ent
                                     <div className="flex gap-2">
                                         <div className="flex-1 min-w-0">
                                             <h5 className="text-[18px] md:text-[15px] tracking-wide font-medium text-gray-900 line-clamp-4 mb-2 hover:text-red-600 cursor-pointer">
-                                                <span className="text-[#664bff]">{news.NewsTag}:</span>{" "}
+                                                <span className="text-[#00aee3]">{news.NewsTag}:</span>{" "}
                                                 {news.NewsHeading}
                                             </h5>
                                             <div className="text-[10px] md:text-[13px] text-gray-500 opacity-80">
